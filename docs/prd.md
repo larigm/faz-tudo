@@ -46,7 +46,7 @@
 
 ## 📝 4. Escopo Funcional (User Stories)
 
-### US01 — Cadastro e Moderação de Profissional · `Must Have` · `M` · Status: `⚪ Draft`
+### US01 — Cadastro e Moderação de Profissional · `Must Have` · `M` · Status: `🟡 Ready`
 
 **Como** profissional, **eu quero** me cadastrar informando minhas categorias e localização, **para que** o administrador possa analisar meu perfil e liberar meu acesso na plataforma.
 
@@ -61,7 +61,7 @@
 
 ---
 
-### US02 — Busca e Visualização de Profissionais · `Must Have` · `S` · Status: `⚪ Draft`
+### US02 — Busca e Visualização de Profissionais · `Must Have` · `S` · Status: `🟡 Ready`
 
 **Como** cliente ou visitante, **eu quero** pesquisar profissionais por categoria de serviço e região, **para que** possa visualizar perfis públicos de prestadores aprovados.
 
@@ -76,7 +76,7 @@
 
 ---
 
-### US03 — Solicitação e Negociação de Serviço · `Must Have` · `M` · Status: `⚪ Draft`
+### US03 — Solicitação e Negociação de Serviço · `Must Have` · `M` · Status: `🟡 Ready`
 
 **Como** cliente autenticado, **eu quero** enviar uma solicitação de serviço a um profissional aprovado informando a descrição da necessidade e a localização, **para que** o profissional possa aceitar, recusar ou negociar os detalhes.
 
@@ -92,7 +92,7 @@
 
 ---
 
-### US04 — Pagamento e Confirmação de Serviço · `Must Have` · `M` · Status: `⚪ Draft`
+### US04 — Pagamento e Confirmação de Serviço · `Must Have` · `M` · Status: `🟡 Ready`
 
 **Como** cliente com uma solicitação aceita ou negociada, **eu quero** realizar o pagamento pela plataforma em ambiente de testes (sandbox), **para que** o serviço seja oficialmente confirmado.
 
@@ -106,7 +106,7 @@
 
 ---
 
-### US05 — Conclusão e Avaliação do Serviço · `Must Have` · `S` · Status: `⚪ Draft`
+### US05 — Conclusão e Avaliação do Serviço · `Must Have` · `S` · Status: `🟡 Ready`
 
 **Como** participante de um serviço confirmado, **eu quero** indicar a conclusão do atendimento e avaliar a outra parte, **para que** a reputação da plataforma seja mantida.
 
