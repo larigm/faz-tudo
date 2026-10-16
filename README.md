@@ -8,7 +8,10 @@ Uma plataforma que conecta clientes a profissionais de serviços residenciais co
 
 ## Stack
 
-_Pendente — será definida na Atividade 05 (`/utf-architecture`)._
+NestJS,
+Prisma,
+PostgreSQL,
+React
 
 ## Em produção
 
