@@ -101,8 +101,9 @@
 - [ ] **Dado** que o profissional aceitou a solicitação ou o cliente aceitou uma contraproposta, **quando** o cliente realiza o pagamento em ambiente de testes (sandbox) com dados válidos, **então** a transação é aprovada e a solicitação passa para o status `Confirmado`.
 - [ ] **Dado** que o pagamento no ambiente sandbox falha ou é recusado, **quando** a transação é processada, **então** o serviço permanece aguardando pagamento e o cliente poderá tentar novamente.
 - [ ] **Dado** que o gateway envia uma notificação assíncrona (webhook) sobre a mudança de status da transação, **quando** o servidor recebe o evento, **então** o status da solicitação é atualizado no sistema de forma consistente.
+- [ ] **Dado** que o cliente inicia o pagamento, **quando** a transação começa a ser processada, **então** a solicitação muda para `Aguardando Pagamento` e o horário fica reservado por até 3 horas. - [ ] **Dado** que uma solicitação está `Aguardando Pagamento` há mais de 3 horas sem confirmação do webhook, **quando** o prazo expira, **então** a solicitação muda para `Expirado` e o horário é liberado para o profissional. 
 
-**Regras relacionadas:** RN03
+**Regras relacionadas:** RN03, RN07
 
 ---
 
@@ -146,7 +147,7 @@
 | **RN04** | **Confirmação de Conclusão:** O profissional marca o serviço como realizado e o cliente confirma a conclusão antes de o serviço passar para o status `Concluído`.                                                             |
 | **RN05** | **Avaliação Restrita:** Somente participantes de um serviço `Concluído` podem avaliar um ao outro, com nota de 1 a 5 estrelas e comentário.                                                                                   |
 | **RN06** | **Efeitos de Suspensão e Bloqueio:** Profissionais suspensos ou bloqueados não aparecem nas buscas nem recebem novas solicitações; clientes suspensos ou bloqueados não podem criar novas solicitações nem aceitar propostas. |
-
+| **RN07** | **Reserva de Horário no Checkout:** Ao iniciar o pagamento, a solicitação muda para o status `Aguardando Pagamento`, reservando o horário do profissional por até 3 horas. Se o prazo expirar sem confirmação do webhook, a solicitação muda para `Expirado` e o horário é liberado. Caso o webhook chegue após a expiração, o pagamento ainda é confirmado. |
 ---
 
 ## 🚫 6. Fora de Escopo (Non-goals)
